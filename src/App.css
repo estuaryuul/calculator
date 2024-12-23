@@ -1,0 +1,59 @@
+.App {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#display {
+  margin-bottom: 50px;
+  padding-right: 5px;
+  width: 250px; /* Lebar layar */
+  height: 70px; /* Tinggi layar */
+  background-color: black; /* Warna latar belakang layar */
+  border-radius: 15px; /* Sudut layar melengkung */
+  border: 10px solid #444; /* Border untuk memberi kesan frame */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Bayangan di sekitar layar */
+  position: relative;
+  overflow: hidden; /* Menghindari elemen keluar dari frame */
+  color: #28a745;
+  text-align: right;
+}
+
+#calculator-btn {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+  grid-template-rows: repeat(5, 1fr); /* 5 baris */
+  gap: 10px;
+}
+.btn {
+  height: 50px;
+  width: 50px;
+  font-size: 16px;
+  background-color: #4caf50; /* Warna tombol */
+  color: white;
+  border: 2px solid transparent; /* Border awal transparan */
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+#clear {
+  width: 110px;
+  grid-column: span 2;
+  background-color: #28a745;
+}
+
+[id="0"] {
+  width: 110px;
+  grid-column: span 2;
+  background-color: #28a745;
+}
+
+#equals {
+  height: 110px;
+  grid-row: span 2;
+}
